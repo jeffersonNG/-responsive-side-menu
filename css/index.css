@@ -1,0 +1,110 @@
+/*limpa os atributos*/
+*{
+	padding: 0;
+	margin:  0;
+	box-sizing: border-box;
+	outline: none;
+}
+/*fim*/
+
+/*define um tamanho ao corpo da pagina*/
+body{
+	width: 100%;
+	height: 100vh;
+}
+/*fim*/
+
+/*parte superior */
+header{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 10vh;
+	background-color: #000;
+}
+/*fim*/
+
+/*box interno do cabeçalho*/
+header .container{
+	width: 100%;
+	max-width: 1300px;
+	margin: 0px 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/*fim*/
+
+/*container delimitador do icone toggle*/
+#toggle{
+	width:  30px;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+/*fim*/
+
+/*barras do icone toggle*/
+#barra{
+	width:  30px;
+	border: solid 2px #FFF;
+	margin: 3px 0px;
+}
+/*fim*/
+
+/*botao de sair*/
+#close{
+	color:#FFF;
+	font-size: 1.2em;
+}
+/*fim*/
+
+/*fim parte de navegação superior*/
+
+/*inicio tratamento corpo da pagina*/
+
+/*corpo de conteudo*/
+section{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+/*fim*/
+
+/*tratamento do box de conteudo*/
+section .conteudo{
+	width: 100%;
+	min-height: 100vh;
+	z-index: 0;
+	background-color: #444;
+}
+/*fim*/
+
+/*tratamento barra de navegação lateral*/
+section .conteudo nav{
+	width: 100%;
+	max-width: 200px;
+	z-index: 2;
+	min-height: 100vh;
+	background-color: #000;
+	display: flex;
+	flex-direction: column;
+}
+/*fim*/
+
+/*tratamento do menu lateral*/
+section .conteudo nav a{
+	color: #FFF;
+	font-size: 1.3em;
+	margin: 0px 5px;
+	margin-bottom: 5px;
+	padding: 5px 5px;
+	background-color: #444;
+	text-decoration: none;
+}
+/*fim*/
+
+/*fim tratamento corpo da pagina
